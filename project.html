@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Yulia's notes: Udacity Intro to programming</title>
+  <link rel="stylesheet" type="text/css" href="projectstyle.css">
+</head>
+<body>
+  <h1>Yulia's Notes: Important Concepts</h1>
+  <div class="lesson">
+    <h2>Lesson 1: The Basics of the Web and HTML</h2>
+    <div class="concept">
+      <div class="concept-title">
+        How the Web Works
+      </div>
+      <div class="concept-description">
+        <p>
+          When a person goes to a web page, their computer sends a 
+          <span class="italic">HTTP Request</span> to 
+          a <span class="italic">server</span>. 
+          The server finds the appropriate HTML document and sends 
+          it back to the user's computer where a <span class="italic">
+          web browser</span> interprets the page and displays it on 
+          the user's screen. 
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">This video</a> 
+          does a good job of explaining more.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        HTML
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML stands for <span class="italic">Hypertext Markup 
+          Language.</span> HTML documents form the majority of the 
+          content on the web.
+        </p>
+        <p>
+          HTML documents contain <span class="italic">text 
+          content</span> which describes "what you see" and 
+          <span class="italic">markup</span> which describes 
+          "how it looks". <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340">This 
+          video</a> gives a good overview.
+        </p>
+        <p>
+          Programmers need to write exactly the way a computer understands (also known as writing with correct "syntax").
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Elements, Tags and Attributes
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML documents are made of HTML 
+          <span class="bold">elements</span>. When writing HTML, we 
+          tell browsers the type of each element by using HTML 
+          <span class="bold">tags</span>. Tags most commonly occur in pairs of opening and closing tags. 
+          <span class="bold">Attributes</span> are properties used to provide additional information about an element. For example, there is <span class="italic">href</span> attribute, which provides a hiperlink reference to a linked resource.
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">This video</a> explains the 
+          distinction well.
+        </p>
+      </div>
+    </div>
+
+    <div class="concept">
+      <div class="concept-title">
+        Inline vs Block Elements
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML elements are either <span class="bold">inline</span> 
+          or <span class="bold">block</span>. Block elements form 
+          an "invisible box" around the content inside of them. <span class="bold">Span</span> is an inline, and <span class="bold">div</span> is a block element. They can be used as a containers for text.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2>Lesson 2: Creating a Structured Document with HTML</h2>
+    <div class="concept">
+      <div class="concept-title">
+        Developer Tools (in the Browser)
+      </div>
+      <div class="concept-description">
+        <p>
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        The "tree-like structure" of HTML
+      </div>
+      <div class="concept-description">
+        <p>
+          The "tree-like structure" comes from the fact that HTML 
+          elements can have other elements inside of them. You can 
+          draw this relationship like a family tree. My mother 
+          had multiple children. So did her mother, and so on...
+        </p>
+        <p>
+          In a browser, this structure shows up as a series 
+          of nested boxes. There are boxes inside of boxes 
+          inside of boxes, and so on...
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        The relationship between indented HTML and boxes
+      </div>
+      <div class="concept-description">
+        <p>
+          When you read an HTML document as 
+          <span class="italic">text</span>, you see a wave of 
+          changing indentations going up and down the left side 
+          of the document. The more indented an element is, the 
+          more deeply nested its corresponding "box" is.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Text Editors (for programming)
+      </div>
+      <div class="concept-description">
+        <p>
+          When writing code, programmers use special text editors 
+          (like Sublime Text for example). These editors make the 
+          programmer's life easier. For example, some text editors 
+          will automatically generate a closing HTML tag when you 
+          write an opening tag.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2>Lesson 3: Adding CSS Style to HTML Structure</h2>
+    <div class="concept">
+      <div class="concept-title">
+        Adding Style
+      </div>
+      <div class="concept-description">
+        <p>
+         CSS is code written to control the "style" of HTML elements.
+         CSS stands for "Cascading Style Sheets." CSS allows programmers to avoid repetition.
+       </p>
+       <p>
+        Avoiding repetition is one of the main software development principles. By applying style to classes or types in CSS, we do not need to write the same code over and over again. It gives us adventages like: cleaner and simpler code, less mistake, easy modifying if nesesarry.
+      </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title">
+      Thinking about "cascading"
+    </div>
+    <div class="concept-description">
+      <p>
+        "Cascading" (inheritance) means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. 
+      </p>
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title">
+     CSS selectors
+   </div>
+   <div class="concept-description">
+    <p>
+      A selector designates exactly which element or elements within HTML to target and apply styles (such as color, size, and position) to. The most common selectors: type, class, and ID selectors.
+    </p>
+    <p>
+      Very nice article on css selectors: <a href="http://css-tricks.com/how-css-selectors-work/">Link</a>. 
+
+      Documentation page on fonts: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font">Link</a>
+
+
+    </p>
+  </div>
+</div>
+<div class="concept">
+  <div class="concept-title">
+    The Box Revisited
+  </div>
+  <div class="concept-description">
+    <p>
+     HTML elements are boxes and each box has 4 components: margins, borders, padding and content. Good pracrice to set box sizes in terms of percents rather than pixels. CSS allows us to positioning boxes next ot each other (rule "display: flex;"). Browsers use default stylesheets to determine how to display HTML elements.
+   </p>
+ </div>
+</div>
+<div class="concept">
+  <div class="concept-title">
+   Verifying HTML amd CSS
+ </div>
+ <div class="concept-description">
+  <p>
+    When writing HTML and CSS we have validators to check our work. Validating our code not only helps it render properly across all browsers, but also helps teach us the best practices for writing code.  
+  </p>
+  <p>
+    To verify HTML: <a href="http://validator.w3.org/#validate_by_input">Link</a>. To verify CSS: <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">Link</a>.
+  </p>
+</div>
+</div>
+</div>
+<h1>Yulia's Notes: Telling Computers What To Do</h1>
+<div class="lesson">
+  <h2>Lesson 1: Introduction to "Serious" Programming</h2>
+  <div class="concept">
+    <div class="concept-title">
+      Programming
+    </div>
+    <div class="concept-description">
+      <p>
+       A <span class="bold">computer</span> is a machine that can execute a program. With the right program, a computer can do
+       any mechanical computation you can imagine.
+     </p>
+     <p>
+      A <span class="bold">program</span> describes a very precise sequence of steps. Since the computer is just a machine, the
+      program must give the steps in a way that can be executed mechanically. That is, the program can
+      be followed without any thought.
+    </p>
+    <p>
+      <span class="bold">Python</span> is a programming language. The programs that we write in the Python language will be the
+      input to the Python interpreter, which is a program that runs on the computer. The Python
+      interpreter reads our programs and executes them by following the rules of the Python language. 
+    </p>
+  </div>
+</div>
+</div>
+<div class="concept">
+  <div class="concept-title">
+    Grammar
+  </div>
+  <div class="concept-description">
+    <p>
+      Programming languages like Python adhere to a strict
+      grammatical structure. The code must match the language grammar exactly. 
+    </p>
+    <p>When programming language grammar is not followed the interpreter will return a <span class="italic">
+      "SyntaxError" message</span>.
+    </p>
+  </div>
+</div>
+
+<div class="lesson">
+  <h2>Lesson 2: Variables and Strings</h2>
+  <div class="concept">
+    <div class="concept-title">
+      Variables and Strings
+    </div>
+    <div class="concept-description">
+     <p>
+       A <span class="bold">variable</span>  is a name that refers to a value, after the assignment statement.
+     </p>
+     <p>
+      A <span class="bold">string</span> is a sequence of characters surrounded by quotes. Strings can't not be modified. You can select a sub-sequence of a string - indexing. 
+    </p>
+    <p>
+      <span class="bold">Find</span> - one of the string-searching method, provided by Python. Outputs a number giving the position in <span class='italic'>'Search String'</span> where <span class='italic'>'Target String'</span> first appears.If there is no occurrence of <span class='italic'>'Target String'</span> in <span class='italic'>'Search String'</span>, the output is -1.
+    </p>
+
+  </div>
+</div> 
+</div>
+<div class="lesson">
+  <h2>Lesson 3: Input -> Function -> Output</h2>
+  <div class="concept">
+    <div class="concept-title">
+      Introducing Procedures
+    </div>
+    <div class="concept-description">
+      <p>
+       A <span class="bold">procedure</span> takes in inputs, does some processing, and produces outputs.
+     </p>
+     <p>
+      To finish the procedure, we need to produce the outputs. To do this, we add Python <span class="italic">return</span>  statement.  
+    </p>
+    <p>Procedural abstraction is a way to write code once that works on any number of different data values. By turning our code into a procedure, we can use that code over and over again with different inputs to get different behaviors.
+    </p>
+  </div>
+</div> 
+</div> 
+<div class="lesson">
+  <h2>Lesson 4: Decision and Repetition: If and While</h2>
+  <div class="concept">
+    <div class="concept-title">
+      Equality Comparisons
+    </div>
+    <div class="concept-description">
+      <p>
+        Python provides several operators for making comparisons: <br>
+
+        &lt; less than <br>
+        &gt; greater than <br>
+        &lt;= less than or equal to <br>
+        &gt;= greater than or equal to <br>
+        == equal to <br>
+        != not equal to <br>
+      </p>
+      <p>
+        The output of a comparison is a Boolean: True or False. Example:
+      </p>
+      <pre>
+        5==7
+        False
+      </pre>
+
+    </div>
+    <div class= "concept-title">
+      If Statements
+    </div> 
+    <div class= "concept-description">
+      <p>An <span class="bold">if</span> statement provides a way to control what code executes based on the result of a test expression: 
+      </p>
+      <pre>
+        if &lt;TestExpression&gt;:
+        &lt;block&gt;
+      </pre>
+    </div>
+    <div class= "concept-title">
+      While Loops
+    </div>
+    <div class ="concept-description">
+      <p><span class="bold">While</span> loop executes any number of times, continuing as long as the test expression is True. 
+        Example: 
+      </p>
+      <pre>
+        i = 0
+        while i &lt; 10:
+        print i
+        i = i + 1
+      </pre>
+      
+    </div>
+  </div>
+</div>
+<div class="lesson">
+  <h2>Lesson 5: Structured Data: Lists and For Loops</h2>
+  <div class="concept">
+    <div class="concept-title">
+      Lists
+    </div>
+    <div class="concept-description">
+      Lists are very powerful data structure. It is an ordered collection of objects.
+    </div>
+  </div>
+  <div class="concept">
+    <div class="concept-title">
+      For Loop
+    </div>
+    <div class="concept-description">
+      For Loops allow you to iterate over lists.
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
